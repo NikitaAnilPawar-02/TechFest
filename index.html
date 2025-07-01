@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Fest</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+
+      nav ul {
+        background-color: lightseagreen;
+        display: flex;
+        flex-direction: row;
+        height: 40px;
+        gap: 5%;
+        font-size: 20px;
+        text-align: center;
+        padding-top: 15px;
+        padding-left: 20px;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+      }
+
+      a:hover {
+        color: navy;
+      }
+
+      .box {
+        border: 2px solid lightseagreen;
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        margin: 10px;
+      }
+
+      .b1 {
+        background-image: url(img/Blind\ Code.png);
+        /* opacity: 0.7; */
+      }
+
+      .b2 {
+        background-image: url(img/tech\ quiz.png);
+        /* opacity: 0.7; */
+      }
+
+      .b3 {
+        background-image: url(img/Code\ champ.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        /* opacity: 0.7; */
+      }
+
+      .b4 {
+        background-image: url(img/Output\ tracker.png);
+        /* opacity: 0.7; */
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: relative;
+      }
+
+      .b5 {
+        background-image: url(img/coding\ master.png);
+        /* opacity: 0.7; */
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .info {
+        margin: 25px 0px;
+        display: flex;
+        align-content: space-around;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .heading {
+        font-size: 50px;
+        font-weight: bolder;
+        color: lightseagreen;
+        margin-top: 15px;
+      }
+
+      h3 {
+        text-align: center;
+        margin-top: 90px;
+      }
+
+      h1 {
+        text-align: center;
+        color: lightseagreen;
+        font-weight: bold;
+      }
+
+      table {
+        margin: 0 auto;
+        text-align: center;
+        border: 2px solid lightseagreen;
+        border-radius: 10px;
+        line-height: 40px;
+        width: 1000px;
+        height: 400px;
+        margin-top: 20px;
+      }
+
+      #link {
+        text-align: center;
+        margin: 50px 0;
+      }
+
+      #link a {
+        display: inline-block;
+        padding: 15px 30px;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: lightseagreen;
+        color: white;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+      }
+
+      #link a:hover {
+        background-color: teal;
+      }
+
+      footer {
+        background-color: lightseagreen;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      footer ul {
+        list-style: none;
+      }
+
+      footer li {
+        margin: 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul type="none">
+        <a href="#"><li>Home</li></a>
+        <a href="#info"><li>Info</li></a>
+        <a href="#scheduler"><li>Schedule</li></a>
+        <a href="Register.html"><li>Link</li></a>
+        <a href="#contact"><li>Contact</li></a>
+      </ul>
+    </nav>
+    <div class="heading">
+      <marquee behavior="scroll" direction="left"
+        >TECH FEST &nbsp; &nbsp; &nbsp; &nbsp;TECH FEST &nbsp; &nbsp; &nbsp;
+        &nbsp; TECH FEST &nbsp; &nbsp; &nbsp; &nbsp; TECH FEST&nbsp; &nbsp;
+        &nbsp; &nbsp; TECH FEST</marquee
+      >
+    </div>
+
+    <div id="info" class="info">
+      <div class="box b1"></div>
+      <div class="box b2"></div>
+      <div class="box b3"></div>
+      <div class="box b4"></div>
+      <div class="box b5"></div>
+    </div>
+    <div class="schedule" id="scheduler">
+      <h1>Schedule</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Sr No</th>
+            <th>Event</th>
+            <th>Time</th>
+            <th>Venue</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Blind Code</td>
+            <td>9:00 AM</td>
+            <td>F01-01</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Tech Quiz</td>
+            <td>11:00 AM</td>
+            <td>F02-01</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Code Champ</td>
+            <td>1:00 PM</td>
+            <td>F02-02</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Output Tracker</td>
+            <td>2:00 PM</td>
+            <td>F02-03</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Coding Master</td>
+            <td>3:00 PM</td>
+            <td>F03-01</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="link">
+      <h1>Register Now</h1>
+      <p style="margin-top: 20px; margin-bottom: 20px">
+        To participate in the Tech Fest, please fill out the registration form
+        by clicking the button below. Make sure to provide accurate information
+        so we can get in touch with you regarding event details. Registration
+        closes 3 days before the event, so don’t wait!
+      </p>
+      <a href="Register.html" target="_blank">Click Here to Apply</a>
+    </div>
+
+    <footer id="contact">
+      <ul>
+        <li>Phone No: +91 9822903928</li>
+        <li>Email: techfest@zeal.edu</li>
+        <li>Address: Zeal Institute, Narhe</li>
+      </ul>
+    </footer>
+  </body>
+</html>
